@@ -1,4 +1,4 @@
-import { LuCircleUser } from "react-icons/lu";
+import { LuUser } from "react-icons/lu";
 import { currentUser, auth } from "@clerk/nextjs/server";
 import React from "react";
 
@@ -17,8 +17,8 @@ export default async function UserIcon({}: Props) {
   }
 
   return (
-    <div className="w-7 h-7 rounded-full bg-primary flex items-center justify-center">
-      <LuCircleUser className="w-6 h-6 text-white" />
+    <div className="w-6 h-6 rounded-full bg-primary flex items-center justify-center">
+      <LuUser className="w-6 h-6 text-white" />
     </div>
   );
 }
