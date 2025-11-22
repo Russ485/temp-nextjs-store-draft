@@ -1,0 +1,18 @@
+import React from "react";
+import { Skeleton } from "../ui/skeleton";
+
+type Props = {
+  rows?: number;
+};
+
+export default function LoadingTable({ rows = 5 }: Props) {
+  const tableRows = Array.from({ length: rows }, (_, index) => {
+    return (
+      <div className="mb-4" key={index}>
+        <Skeleton className="w-full h-8 rounded" />
+      </div>
+    );
+  });
+
+  return <>{tableRows}</>;
+}

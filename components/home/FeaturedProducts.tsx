@@ -8,7 +8,7 @@ type Props = {};
 
 export default async function FeaturedProducts({}: Props) {
   const products = await fetchFeaturedProducts();
-  if (products.length === 0) return <EmptyList />;
+  if (products.length === 0) return <EmptyList className="mt-8" />;
 
   return (
     <section className="pt-24">

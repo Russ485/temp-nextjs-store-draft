@@ -2,10 +2,11 @@ import Link from "next/link";
 import React from "react";
 import { Button } from "../ui/button";
 import { LuShoppingCart } from "react-icons/lu";
+import { fetchCartItems } from "@/utils/actions";
 
-export default function CartButton() {
+export default async function CartButton() {
   //temp
-  const numItemsInCart = 9;
+  const numItemsInCart = await fetchCartItems();
 
   return (
     <Button
