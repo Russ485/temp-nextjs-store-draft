@@ -219,7 +219,7 @@ export const toggleFavoriteAction = async (prevState: {
     }
 
     revalidatePath(pathname);
-    return { message: favoriteId ? "removed from faves" : "added to faves" };
+    //return { message: favoriteId ? "removed from faves" : "added to faves" };
   } catch (error) {
     return renderError(error);
   }
