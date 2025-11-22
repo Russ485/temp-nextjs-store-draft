@@ -1,9 +1,5 @@
 import BreadCrumbs from "@/components/single-product/BreadCrumbs";
-import {
-  fetchProductReviewsByUser,
-  fetchSingleProduct,
-  findExistingReview,
-} from "@/utils/actions";
+import { fetchSingleProduct, findExistingReview } from "@/utils/actions";
 import Image from "next/image";
 import { formatCurrency } from "@/utils/format";
 import FavoriteToggleButton from "@/components/products/FavoriteToggleButton";
@@ -13,7 +9,6 @@ import ShareButton from "@/components/single-product/ShareButton";
 import ProductReviews from "@/components/reviews/ProductReviews";
 import SubmitReview from "@/components/reviews/SubmitReview";
 import { auth } from "@clerk/nextjs/server";
-import SelectProductAmount from "@/components/single-product/SelectProductAmount";
 
 export default async function ProductDetailPage({
   params,
